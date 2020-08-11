@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('admin/formAdd');
 });
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/medecin', function () {
+    return view('vitrine.form_medecin');
+});
